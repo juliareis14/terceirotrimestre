@@ -8,8 +8,8 @@
     Title="tericeirotrimestre">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:JogoPage}"
-        Route="JogoPage" />
+        Title=""
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
 
 </Shell>
