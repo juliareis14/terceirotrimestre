@@ -34,37 +34,43 @@
          Text="Texto da Pergunta"
          FontSize="16" 
          VerticalOptions="Center"
-         HorizontalOptions="Center" />
+         HorizontalOptions="Center"
+         x:Name="labelPergunta" />
 
         <Button Grid.Row="2"
          Grid.ColumnSpan="3"
          Margin="5" 
          Text="a-"
-         BackgroundColor="#730b46"/>
+         BackgroundColor="#730b46"
+         x:Name="ButtonResposta1"/>
 
         <Button Grid.Row="3"
          Grid.ColumnSpan="3"
          Margin="5"
          Text="b-"
-         BackgroundColor="#730b46" />
+         BackgroundColor="#730b46"
+         x:Name="ButtonResposta2" />
 
         <Button Grid.Row="4"
          Grid.ColumnSpan="3"
          Text="c-"
          Margin="5" 
-         BackgroundColor="#730b46"/>
+         BackgroundColor="#730b46"
+         x:Name="ButtonResposta3"/>
 
         <Button Grid.Row="5"
          Grid.ColumnSpan="3" 
          Margin="5"
          Text="d-" 
-         BackgroundColor="#730b46"/>
+         BackgroundColor="#730b46"
+         x:Name="ButtonResposta4"/>
 
         <Button Grid.Row="6"
          Grid.ColumnSpan="3"
          Margin="5" 
          Text="e-"
-         BackgroundColor="#730b46"/>
+         BackgroundColor="#730b46"
+         x:Name="ButtonResposta5"/>
 
         <Button Grid.Row="7"
          Grid.Column="0" 
