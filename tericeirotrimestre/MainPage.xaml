@@ -42,35 +42,40 @@
          Margin="5" 
          Text="a-"
          BackgroundColor="#730b46"
-         x:Name="ButtonResposta1"/>
+         x:Name="ButtonResposta1"
+         Clicked="ButtonResposta1Clicked"/>
 
         <Button Grid.Row="3"
          Grid.ColumnSpan="3"
          Margin="5"
          Text="b-"
          BackgroundColor="#730b46"
-         x:Name="ButtonResposta2" />
+         x:Name="ButtonResposta2"
+         Clicked="ButtonResposta2Clicked" />
 
         <Button Grid.Row="4"
          Grid.ColumnSpan="3"
          Text="c-"
          Margin="5" 
          BackgroundColor="#730b46"
-         x:Name="ButtonResposta3"/>
+         x:Name="ButtonResposta3"
+         Clicked="ButtonResposta3Clicked"/>
 
         <Button Grid.Row="5"
          Grid.ColumnSpan="3" 
          Margin="5"
          Text="d-" 
          BackgroundColor="#730b46"
-         x:Name="ButtonResposta4"/>
+         x:Name="ButtonResposta4"
+         Clicked="ButtonResposta4Clicked"/>
 
         <Button Grid.Row="6"
          Grid.ColumnSpan="3"
          Margin="5" 
          Text="e-"
          BackgroundColor="#730b46"
-         x:Name="ButtonResposta5"/>
+         x:Name="ButtonResposta5"
+         Clicked="ButtonResposta5Clicked"/>
 
         <Button Grid.Row="7"
          Grid.Column="0" 

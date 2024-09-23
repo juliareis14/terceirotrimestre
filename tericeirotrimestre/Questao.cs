@@ -35,7 +35,18 @@ namespace terceirotrimestre
             ButtonResposta3.Text = Resposta3;
             ButtonResposta4.Text = Resposta4;
             ButtonResposta5.Text = Resposta5;
-        }
+
+            this.ButtonResposta1!.BackgroundColor = Colors.DarkBlue;
+            this.ButtonResposta1!.TextColor       = Colors.White;
+            this.ButtonResposta2!.BackgroundColor = Colors.DarkBlue;
+            this.ButtonResposta2!.TextColor       = Colors.White;
+            this.ButtonResposta3!.BackgroundColor = Colors.DarkBlue;
+            this.ButtonResposta3!.TextColor       = Colors.White;
+            this.ButtonResposta4!.BackgroundColor = Colors.DarkBlue;
+            this.ButtonResposta4!.TextColor       = Colors.White;
+            this.ButtonResposta5!.BackgroundColor = Colors.DarkBlue;
+            this.ButtonResposta5!.TextColor       = Colors.White;
+                }
 
         private Button QualButton(int RespostaSelecionada)
         {
