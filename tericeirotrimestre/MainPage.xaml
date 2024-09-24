@@ -17,6 +17,7 @@
             <RowDefinition Height="1*" />  
             <RowDefinition Height="1*" />  
             <RowDefinition Height="1*" /> 
+            <RowDefinition Height="50*" /> 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -24,6 +25,16 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="8"
+         Text="Pontuação:"
+         x:Name="Pontuacao"
+         Grid.ColumnSpan="2" />
+
+        <Label Grid.Row="8"
+         Text="Nível:"
+         Grid.Column="2"
+          x:Name="Nivel" />
 
         <Image Grid.Row="0" 
         Grid.ColumnSpan="3" 

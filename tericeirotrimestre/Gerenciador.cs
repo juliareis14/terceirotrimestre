@@ -3,14 +3,19 @@ using tericeirotrimestre;
 
 public class Gerenciador
 
+
 {
   List<Questao> ListaQuestoes = new List<Questao>();
   List<int> ListaQuestoesRespondidas = new List<int>();
   Questao QuestaoAtual;
-
-  public Gerenciador(Label labelPerg, Button ButtonResposta1, Button ButtonResposta2, Button ButtonResposta3, Button ButtonResposta4, Button ButtonResposta5)
+  
+  Label labelPontuacao;
+  Label labelNivel;
+  public Gerenciador(Label labelPerg, Button ButtonResposta1, Button ButtonResposta2, Button ButtonResposta3, Button ButtonResposta4, Button ButtonResposta5, Label labelPontuacao, Label labelNivel)
 
   {
+    this.labelPontuacao = labelPontuacao;
+    this.labelNivel = labelNivel;
     CriaPerguntas(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
     ProximaQuestao();
   }
@@ -859,6 +864,369 @@ public class Gerenciador
     Q70.Respostacorreta = 1;
     ListaQuestoes.Add(Q70);
 
+
+    // Pergunta 71
+    var Q71 = new Questao();
+    Q71.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q71.Pergunta = "Qual cientista descobriu a radioatividade do urânio?";
+    Q71.Resposta1 = "Marie Curie";
+    Q71.Resposta2 = "Henri Becquerel";
+    Q71.Resposta3 = "Ernest Rutherford";
+    Q71.Resposta4 = "James Chadwick";
+    Q71.Resposta5 = "Wilhelm Röntgen";
+    Q71.Respostacorreta = 2;
+    ListaQuestoes.Add(Q71);
+
+    // Pergunta 72
+    var Q72 = new Questao();
+    Q72.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q72.Pergunta = "Qual é a diferença entre a massa de prótons e nêutrons em um átomo chamada?";
+    Q72.Resposta1 = "Massa Atômica";
+    Q72.Resposta2 = "Número de Massa";
+    Q72.Resposta3 = "Defeito de Massa";
+    Q72.Resposta4 = "Número de Neutrons";
+    Q72.Resposta5 = "Isótopo";
+    Q72.Respostacorreta = 3;
+    ListaQuestoes.Add(Q72);
+
+    // Pergunta 73
+    var Q73 = new Questao();
+    Q73.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q73.Pergunta = "Qual foi o tratado que encerrou a Primeira Guerra Mundial?";
+    Q73.Resposta1 = "Tratado de Versalhes";
+    Q73.Resposta2 = "Tratado de Tordesilhas";
+    Q73.Resposta3 = "Tratado de Brest-Litovsk";
+    Q73.Resposta4 = "Tratado de Paris";
+    Q73.Resposta5 = "Tratado de Londres";
+    Q73.Respostacorreta = 1;
+    ListaQuestoes.Add(Q73);
+
+    // Pergunta 74
+    var Q74 = new Questao();
+    Q74.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q74.Pergunta = "O que é descrito pela equação de Bernoulli na física de fluidos?";
+    Q74.Resposta1 = "A viscosidade de um fluido";
+    Q74.Resposta2 = "A pressão, velocidade e altura de um fluido em movimento";
+    Q74.Resposta3 = "A taxa de fluxo de um fluido através de um tubo";
+    Q74.Resposta4 = "A resistência ao fluxo de fluidos";
+    Q74.Resposta5 = "O atrito de fluidos";
+    Q74.Respostacorreta = 2;
+    ListaQuestoes.Add(Q74);
+
+    // Pergunta 75
+    var Q75 = new Questao();
+    Q75.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q75.Pergunta = "Em que país ocorreu a Revolução Cultural, que causou profundas mudanças políticas e sociais no século XX?";
+    Q75.Resposta1 = "União Soviética";
+    Q75.Resposta2 = "Cuba";
+    Q75.Resposta3 = "China";
+    Q75.Resposta4 = "Vietnã";
+    Q75.Resposta5 = "Coreia do Norte";
+    Q75.Respostacorreta = 3;
+    ListaQuestoes.Add(Q75);
+
+    // Pergunta 76
+    var Q76 = new Questao();
+    Q76.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q76.Pergunta = "Qual é a unidade padrão de capacitância no Sistema Internacional de Unidades (SI)?";
+    Q76.Resposta1 = "Ohm";
+    Q76.Resposta2 = "Volt";
+    Q76.Resposta3 = "Farad";
+    Q76.Resposta4 = "Coulomb";
+    Q76.Resposta5 = "Henry";
+    Q76.Respostacorreta = 3;
+    ListaQuestoes.Add(Q76);
+
+    // Pergunta 77
+    var Q77 = new Questao();
+    Q77.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q77.Pergunta = "Quem foi o primeiro imperador romano?";
+    Q77.Resposta1 = "Júlio César";
+    Q77.Resposta2 = "Nero";
+    Q77.Resposta3 = "Augusto";
+    Q77.Resposta4 = "Constantino";
+    Q77.Resposta5 = "Tibério";
+    Q77.Respostacorreta = 3;
+    ListaQuestoes.Add(Q77);
+
+    // Pergunta 78
+    var Q78 = new Questao();
+    Q78.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q78.Pergunta = "Qual país foi invadido pela Alemanha em 1939, desencadeando a Segunda Guerra Mundial?";
+    Q78.Resposta1 = "França";
+    Q78.Resposta2 = "Polônia";
+    Q78.Resposta3 = "Reino Unido";
+    Q78.Resposta4 = "Rússia";
+    Q78.Resposta5 = "Noruega";
+    Q78.Respostacorreta = 2;
+    ListaQuestoes.Add(Q78);
+
+    // Pergunta 79
+    var Q79 = new Questao();
+    Q79.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q79.Pergunta = "Qual é o fenômeno pelo qual a luz muda de direção ao passar de um meio para outro?";
+    Q79.Resposta1 = "Reflexão";
+    Q79.Resposta2 = "Difração";
+    Q79.Resposta3 = "Refração";
+    Q79.Resposta4 = "Dispersão";
+    Q79.Resposta5 = "Interferência";
+    Q79.Respostacorreta = 3;
+    ListaQuestoes.Add(Q79);
+
+    // Pergunta 80
+    var Q80 = new Questao();
+    Q80.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q80.Pergunta = "Qual é a principal função da mitocôndria nas células?";
+    Q80.Resposta1 = "Síntese de proteínas";
+    Q80.Resposta2 = "Produção de energia (ATP)";
+    Q80.Resposta3 = "Controle do ciclo celular";
+    Q80.Resposta4 = "Transporte de íons";
+    Q80.Resposta5 = "Reprodução celular";
+    Q80.Respostacorreta = 2;
+    ListaQuestoes.Add(Q80);
+
+    // Pergunta 81
+    var Q81 = new Questao();
+    Q81.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q81.Pergunta = "Qual é o nome da partícula subatômica sem carga elétrica encontrada no núcleo do átomo?";
+    Q81.Resposta1 = "Nêutron";
+    Q81.Resposta2 = "Próton";
+    Q81.Resposta3 = "Elétron";
+    Q81.Resposta4 = "Quark";
+    Q81.Resposta5 = "Fóton";
+    Q81.Respostacorreta = 1;
+    ListaQuestoes.Add(Q81);
+
+    // Pergunta 82
+    var Q82 = new Questao();
+    Q82.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q82.Pergunta = "Qual é o nome do tratado que dividiu o Império Carolíngio em três reinos em 843?";
+    Q82.Resposta1 = "Tratado de Verdun";
+    Q82.Resposta2 = "Tratado de Westfália";
+    Q82.Resposta3 = "Tratado de Viena";
+    Q82.Resposta4 = "Tratado de Tordesilhas";
+    Q82.Resposta5 = "Tratado de Paris";
+    Q82.Respostacorreta = 1;
+    ListaQuestoes.Add(Q82);
+
+    // Pergunta 83
+    var Q83 = new Questao();
+    Q83.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q83.Pergunta = "Qual químico propôs a tabela periódica em sua forma moderna, organizando os elementos por propriedades atômicas?";
+    Q83.Resposta1 = "Dmitri Mendeleev";
+    Q83.Resposta2 = "Marie Curie";
+    Q83.Resposta3 = "Antoine Lavoisier";
+    Q83.Resposta4 = "Niels Bohr";
+    Q83.Resposta5 = "Robert Hooke";
+    Q83.Respostacorreta = 1;
+    ListaQuestoes.Add(Q83);
+
+    // Pergunta 84
+    var Q84 = new Questao();
+    Q84.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q84.Pergunta = "Em qual ano ocorreu a Revolução Francesa, um marco na história da Europa moderna?";
+    Q84.Resposta1 = "1789";
+    Q84.Resposta2 = "1776";
+    Q84.Resposta3 = "1804";
+    Q84.Resposta4 = "1848";
+    Q84.Resposta5 = "1917";
+    Q84.Respostacorreta = 1;
+    ListaQuestoes.Add(Q84);
+
+    // Pergunta 85
+    var Q85 = new Questao();
+    Q85.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q85.Pergunta = "Qual é o nome do efeito físico em que a frequência de uma onda muda em relação ao observador devido ao movimento relativo da fonte?";
+    Q85.Resposta1 = "Efeito Doppler";
+    Q85.Resposta2 = "Efeito Joule";
+    Q85.Resposta3 = "Efeito Bernoulli";
+    Q85.Resposta4 = "Efeito Hall";
+    Q85.Resposta5 = "Efeito Zeeman";
+    Q85.Respostacorreta = 1;
+    ListaQuestoes.Add(Q85);
+
+    // Pergunta 86
+    var Q86 = new Questao();
+    Q86.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q86.Pergunta = "Quem foi o líder da União Soviética durante a Segunda Guerra Mundial?";
+    Q86.Resposta1 = "Vladimir Lenin";
+    Q86.Resposta2 = "Joseph Stalin";
+    Q86.Resposta3 = "Leon Trotsky";
+    Q86.Resposta4 = "Nikita Khrushchev";
+    Q86.Resposta5 = "Mikhail Gorbachev";
+    Q86.Respostacorreta = 2;
+    ListaQuestoes.Add(Q86);
+
+    // Pergunta 87
+    var Q87 = new Questao();
+    Q87.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q87.Pergunta = "Qual é a fórmula química do óxido nitroso, conhecido como gás do riso?";
+    Q87.Resposta1 = "NO2";
+    Q87.Resposta2 = "N2O";
+    Q87.Resposta3 = "NO";
+    Q87.Resposta4 = "N3O";
+    Q87.Resposta5 = "NH3";
+    Q87.Respostacorreta = 2;
+    ListaQuestoes.Add(Q87);
+
+    // Pergunta 88
+    var Q88 = new Questao();
+    Q88.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q88.Pergunta = "Quem escreveu a famosa obra literária 'Divina Comédia'?";
+    Q88.Resposta1 = "Dante Alighieri";
+    Q88.Resposta2 = "William Shakespeare";
+    Q88.Resposta3 = "Homer";
+    Q88.Resposta4 = "Virgílio";
+    Q88.Resposta5 = "Johann Wolfgang von Goethe";
+    Q88.Respostacorreta = 1;
+    ListaQuestoes.Add(Q88);
+
+    // Pergunta 89
+    var Q89 = new Questao();
+    Q89.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q89.Pergunta = "Qual é a lei da física que afirma que a energia não pode ser criada nem destruída, apenas transformada?";
+    Q89.Resposta1 = "Lei da Conservação da Energia";
+    Q89.Resposta2 = "Lei da Gravitação Universal";
+    Q89.Resposta3 = "Lei de Coulomb";
+    Q89.Resposta4 = "Lei da Inércia";
+    Q89.Resposta5 = "Lei de Hooke";
+    Q89.Respostacorreta = 1;
+    ListaQuestoes.Add(Q89);
+
+    // Pergunta 90
+    var Q90 = new Questao();
+    Q90.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q90.Pergunta = "Qual foi a teoria geocêntrica proposta pelo astrônomo grego Ptolomeu?";
+    Q90.Resposta1 = "O Sol é o centro do universo";
+    Q90.Resposta2 = "Os planetas orbitam em elipses ao redor do Sol";
+    Q90.Resposta3 = "A Terra é o centro do universo";
+    Q90.Resposta4 = "O universo é finito e fechado";
+    Q90.Resposta5 = "As estrelas são fixas e imutáveis";
+    Q90.Respostacorreta = 3;
+    ListaQuestoes.Add(Q90);
+
+    // Pergunta 91
+    var Q91 = new Questao();
+    Q91.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q91.Pergunta = "Em que país ocorreu a Revolução de Outubro de 1917?";
+    Q91.Resposta1 = "Alemanha";
+    Q91.Resposta2 = "China";
+    Q91.Resposta3 = "França";
+    Q91.Resposta4 = "Rússia";
+    Q91.Resposta5 = "Itália";
+    Q91.Respostacorreta = 4;
+    ListaQuestoes.Add(Q91);
+
+    // Pergunta 92
+    var Q92 = new Questao();
+    Q92.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q92.Pergunta = "Qual é o nome do processo biológico em que as plantas convertem luz solar em energia química?";
+    Q92.Resposta1 = "Respiração celular";
+    Q92.Resposta2 = "Fermentação";
+    Q92.Resposta3 = "Fotossíntese";
+    Q92.Resposta4 = "Quimiossíntese";
+    Q92.Resposta5 = "Ciclo de Krebs";
+    Q92.Respostacorreta = 3;
+    ListaQuestoes.Add(Q92);
+
+    // Pergunta 93
+    var Q93 = new Questao();
+    Q93.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q93.Pergunta = "Quem foi o autor do livro 'O Capital', que teve grande influência no pensamento socialista?";
+    Q93.Resposta1 = "Karl Marx";
+    Q93.Resposta2 = "Friedrich Engels";
+    Q93.Resposta3 = "Adam Smith";
+    Q93.Resposta4 = "Vladimir Lenin";
+    Q93.Resposta5 = "John Locke";
+    Q93.Respostacorreta = 1;
+    ListaQuestoes.Add(Q93);
+
+    // Pergunta 94
+    var Q94 = new Questao();
+    Q94.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q94.Pergunta = "Qual cientista é considerado o pai da teoria da relatividade?";
+    Q94.Resposta1 = "Isaac Newton";
+    Q94.Resposta2 = "Galileu Galilei";
+    Q94.Resposta3 = "Albert Einstein";
+    Q94.Resposta4 = "Niels Bohr";
+    Q94.Resposta5 = "Max Planck";
+    Q94.Respostacorreta = 3;
+    ListaQuestoes.Add(Q94);
+
+    // Pergunta 95
+    var Q95 = new Questao();
+    Q95.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q95.Pergunta = "Qual é o nome do polígono com o menor número de lados?";
+    Q95.Resposta1 = "Hexágono";
+    Q95.Resposta2 = "Triângulo";
+    Q95.Resposta3 = "Quadrado";
+    Q95.Resposta4 = "Pentágono";
+    Q95.Resposta5 = "Heptágono";
+    Q95.Respostacorreta = 2;
+    ListaQuestoes.Add(Q95);
+
+    // Pergunta 96
+    var Q96 = new Questao();
+    Q96.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q96.Pergunta = "Qual das opções abaixo é uma partícula elementar?";
+    Q96.Resposta1 = "Próton";
+    Q96.Resposta2 = "Elétron";
+    Q96.Resposta3 = "Neutrino";
+    Q96.Resposta4 = "Fóton";
+    Q96.Resposta5 = "Todas as anteriores";
+    Q96.Respostacorreta = 5;
+    ListaQuestoes.Add(Q96);
+
+    // Pergunta 97
+    var Q97 = new Questao();
+    Q97.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q97.Pergunta = "Em que ano foi assinada a Declaração de Independência dos Estados Unidos?";
+    Q97.Resposta1 = "1776";
+    Q97.Resposta2 = "1783";
+    Q97.Resposta3 = "1789";
+    Q97.Resposta4 = "1804";
+    Q97.Resposta5 = "1812";
+    Q97.Respostacorreta = 1;
+    ListaQuestoes.Add(Q97);
+
+    // Pergunta 98
+    var Q98 = new Questao();
+    Q98.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q98.Pergunta = "Quem foi o primeiro presidente dos Estados Unidos?";
+    Q98.Resposta1 = "Thomas Jefferson";
+    Q98.Resposta2 = "John Adams";
+    Q98.Resposta3 = "George Washington";
+    Q98.Resposta4 = "Abraham Lincoln";
+    Q98.Resposta5 = "Benjamin Franklin";
+    Q98.Respostacorreta = 3;
+    ListaQuestoes.Add(Q98);
+
+    // Pergunta 99
+    var Q99 = new Questao();
+    Q99.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q99.Pergunta = "Qual é a constante gravitacional universal (G) usada na equação de Newton da gravitação universal?";
+    Q99.Resposta1 = "9,8 m/s²";
+    Q99.Resposta2 = "6,67 x 10^-11 N·m²/kg²";
+    Q99.Resposta3 = "3,00 x 10^8 m/s";
+    Q99.Resposta4 = "1,6 x 10^-19 C";
+    Q99.Resposta5 = "1,38 x 10^-23 J/K";
+    Q99.Respostacorreta = 2;
+    ListaQuestoes.Add(Q99);
+
+    // Pergunta 100
+    var Q100 = new Questao();
+    Q100.ConfiguraDesenho(labelPerg, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+    Q100.Pergunta = "Qual é o fenômeno em que a luz é espalhada ao passar por pequenas partículas, como as moléculas de ar, causando a cor azul do céu?";
+    Q100.Resposta1 = "Refração";
+    Q100.Resposta2 = "Reflexão";
+    Q100.Resposta3 = "Dispersão";
+    Q100.Resposta4 = "Efeito Doppler";
+    Q100.Resposta5 = "Dispersão de Rayleigh";
+    Q100.Respostacorreta = 5;
+    ListaQuestoes.Add(Q100);
+
+
+
   }
   public async void VerificaCorreta(int RR)
   {
@@ -872,7 +1240,10 @@ public class Gerenciador
     else
     {
       await App.Current.MainPage.DisplayAlert("Fim","Você errou!","Ok");
+      Inicializar();
 
+      labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
+      labelNivel.Text="Nível:"+NivelAtual.ToString();
     }
   }
   void ProximaQuestao()
