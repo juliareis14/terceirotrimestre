@@ -76,7 +76,7 @@ namespace terceirotrimestre
             {
                 var ButtonCorreto = QualButton (Respostacorreta);
                 var ButtonIncorreto = QualButton (RespostaSelecionada);
-                ButtonCorreto.BackgroundColor = Colors.Yellow;
+                ButtonCorreto.BackgroundColor = Colors.Green;
                 ButtonIncorreto.BackgroundColor = Colors.Red;
                 return false;
             }

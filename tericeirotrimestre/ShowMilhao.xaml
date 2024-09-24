@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tericeirotrimestre.ShowMilhao"
+             Shell.NavBarIsVisible="False">
+<Grid>
+       <Image Source="imagem1.png"
+              Opacity=".8"
+              Aspect="AspectFill"/>
+
+       <Label Text="O Mistério da Ilha Esquecida"
+              TextColor="#2f2f36"
+              Margin="20,170,20,0"
+              FontFamily="Thurkle"
+              FontSize="50"
+              LineHeight="1.5"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"
+              VerticalOptions="Start"/>
+
+
+  <Button  Text="Iniciar"
+           Clicked="BotaoIniciarFoiClicado"
+           HeightRequest="50"
+           CornerRadius="25"
+           BackgroundColor="#2f2f36"
+           TextColor="White"
+           BorderWidth="1"
+           BorderColor="White"
+           Margin="0,0,0,10"
+           FontSize="18"
+
+           FontFamily="CachetStdBold"/>
+    </Grid>
+    </ContentPage>

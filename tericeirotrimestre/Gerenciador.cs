@@ -1236,15 +1236,15 @@ public class Gerenciador
       AdicionaPontuacao(NivelAtual);
       NivelAtual++;
       ProximaQuestao();
+       labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
+      labelNivel.Text="Nível:"+NivelAtual.ToString();
     }
     else
     {
       await App.Current.MainPage.DisplayAlert("Fim","Você errou!","Ok");
-      Inicializar();
-
-      labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
-      labelNivel.Text="Nível:"+NivelAtual.ToString();
+      Inicializar();   
     }
+
   }
   void ProximaQuestao()
   {
@@ -1263,6 +1263,8 @@ public class Gerenciador
     Pontuacao = 0;
     NivelAtual = 1;
     ProximaQuestao();
+     labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
+      labelNivel.Text="Nível:"+NivelAtual.ToString();
   }
 
   void AdicionaPontuacao(int n)
