@@ -9,7 +9,7 @@
 
     <ShellContent
         Title=""
-        ContentTemplate="{DataTemplate local:ShowMilhao}"
-        Route="ShowMilhao" />
+        ContentTemplate="{DataTemplate local:Telainicial}"
+        Route="MainPage" />
 
 </Shell>

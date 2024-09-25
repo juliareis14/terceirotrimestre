@@ -1232,17 +1232,30 @@ public class Gerenciador
   {
     if (QuestaoAtual.VerificaResposta(RR))
     {
-      await Task.Delay(1000);
-      AdicionaPontuacao(NivelAtual);
+      
+        await Task.Delay(1000);
+        AdicionaPontuacao(NivelAtual);
       NivelAtual++;
       ProximaQuestao();
-       labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
-      labelNivel.Text="Nível:"+NivelAtual.ToString();
-    }
+      labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
+         labelNivel.Text = "Nível:" + NivelAtual.ToString();
+
+
+
+        if (NivelAtual >=10)
+        {
+        await App.Current.MainPage.DisplayAlert("Você ganhou!","Parabéns","Ok");
+        Inicializar();
+        } 
+      }
+
+      
+    
     else
     {
       await App.Current.MainPage.DisplayAlert("Fim","Você errou!","Ok");
-      Inicializar();   
+      Inicializar(); 
+      ListaQuestoesRespondidas.Clear();
     }
 
   }
@@ -1263,8 +1276,8 @@ public class Gerenciador
     Pontuacao = 0;
     NivelAtual = 1;
     ProximaQuestao();
-     labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
-      labelNivel.Text="Nível:"+NivelAtual.ToString();
+    labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
+    labelNivel.Text="Nível:"+NivelAtual.ToString();
   }
 
   void AdicionaPontuacao(int n)
