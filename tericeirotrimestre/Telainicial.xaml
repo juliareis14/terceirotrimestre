@@ -11,8 +11,16 @@
     <Image Source="imagem2.png"
                Aspect="AspectFill"
                HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"
-              />
+               VerticalOptions="FillAndExpand" />
+
+              <Label Text="QUIZ"
+              TextColor="White"
+                     FontSize="100"
+                     HorizontalOptions="Center"
+                      VerticalOptions="Start"
+                      Margin="50"
+
+                     />
 
         
         
@@ -20,11 +28,11 @@
                 Clicked="OnButtonIniciarJogoButtonClicked"
                 Text="JOGAR"
             
-                BackgroundColor="#4287f5"
+                BackgroundColor="#730b46"
                 FontSize="12"
                 HorizontalOptions="Fill"
                VerticalOptions="End"
-               Margin="10"
+               Margin="10,10,10,20"
                 />
     
 
