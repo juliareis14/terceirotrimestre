@@ -30,6 +30,11 @@ public partial class MainPage : ContentPage
 	{
 		gerenciador.VerificaCorreta(5);
 	}
+ 	private void ButtonVoltarButtonClicked(object sender, EventArgs args)
+        {
 
+            Application.Current.MainPage = new Telainicial();
+
+}
 }
 

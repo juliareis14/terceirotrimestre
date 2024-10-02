@@ -1,8 +1,7 @@
 using terceirotrimestre;
 using tericeirotrimestre;
 
-public class Gerenciador
-
+  public class Gerenciador
 
 {
   List<Questao> ListaQuestoes = new List<Questao>();
@@ -1312,8 +1311,5 @@ public class Gerenciador
     else Pontuacao = 1000000;
 
   }
-
-
-
 }
 

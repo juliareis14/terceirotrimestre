@@ -8,19 +8,10 @@
 
     <Grid  >
 
-    <Image Source="imagem2.png"
+    <Image Source="imagem3.png"
                Aspect="AspectFill"
                HorizontalOptions="FillAndExpand"
                VerticalOptions="FillAndExpand" />
-
-              <Label Text="QUIZ"
-              TextColor="White"
-                     FontSize="100"
-                     HorizontalOptions="Center"
-                      VerticalOptions="Start"
-                      Margin="50"
-
-                     />
 
         
         

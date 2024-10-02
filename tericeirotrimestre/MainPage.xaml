@@ -18,6 +18,7 @@
             <RowDefinition Height="1*" />  
             <RowDefinition Height="1*" /> 
             <RowDefinition Height="50*" /> 
+            <RowDefinition Height="*" /> 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -47,6 +48,13 @@
          VerticalOptions="Center"
          HorizontalOptions="Center"
          x:Name="labelPergunta" />
+
+        <Button Text="VOLTAR"
+        BackgroundColor="#730b46"
+        TextColor="White"
+        Clicked="ButtonVoltarButtonClicked"
+        Grid.Row="9"
+        Grid.Column="0"/>
 
         <Button Grid.Row="2"
          Grid.ColumnSpan="3"
