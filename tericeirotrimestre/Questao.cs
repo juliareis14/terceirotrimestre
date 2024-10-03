@@ -35,6 +35,13 @@ namespace terceirotrimestre
             ButtonResposta3.Text = Resposta3;
             ButtonResposta4.Text = Resposta4;
             ButtonResposta5.Text = Resposta5;
+            ButtonResposta1.IsVisible = true;
+            ButtonResposta2.IsVisible = true;
+            ButtonResposta3.IsVisible = true;
+            ButtonResposta4.IsVisible = true;
+            ButtonResposta5.IsVisible = true;
+
+
 
             this.ButtonResposta1!.BackgroundColor = Colors.DarkBlue;
             this.ButtonResposta1!.TextColor       = Colors.White;
@@ -95,7 +102,12 @@ namespace terceirotrimestre
             ButtonResposta4 = button4;
             ButtonResposta5 = button5;
         }
-
+      
+         public bool equals (Questao q)
+         {
+            return this.Nivelresposta==q.Nivelresposta &&
+            this.Pergunta==q.Pergunta;
+         }
 
 
 

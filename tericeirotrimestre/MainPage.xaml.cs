@@ -31,10 +31,22 @@ public partial class MainPage : ContentPage
 		gerenciador.VerificaCorreta(5);
 	}
  	private void ButtonVoltarButtonClicked(object sender, EventArgs args)
-        {
+	{
 
-            Application.Current.MainPage = new Telainicial();
+		Application.Current.MainPage = new Telainicial();
+	}
+	void OnAjudaRetiradaClicked(object s, EventArgs e)
+	{
+		var ajuda = new RetiraErradas();
+		ajuda.ConfiguraDesenho(ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
+		ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+		(s as Button).IsVisible=false;
+	}
+	void OnAjudaPulaClicked (object s, EventArgs e)
+	{
+		gerenciador.ProximaQuestao();
+		(s as Button).IsVisible=false;
+	}
 
-}
 }
 

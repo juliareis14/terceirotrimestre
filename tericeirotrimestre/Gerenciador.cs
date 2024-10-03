@@ -1258,7 +1258,7 @@ using tericeirotrimestre;
     }
 
   }
-  void ProximaQuestao()
+   public void ProximaQuestao()
   {
     var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
     while (ListaQuestoesRespondidas.Contains(numAleat))
@@ -1278,6 +1278,12 @@ using tericeirotrimestre;
     labelPontuacao.Text="Pontuação:R$"+Pontuacao.ToString();
     labelNivel.Text="Nível:"+NivelAtual.ToString();
   }
+
+  public Questao GetQuestaoCorrente()
+   {
+    return QuestaoAtual;
+   }
+
 
   void AdicionaPontuacao(int n)
   {

@@ -6,7 +6,7 @@
 
     <ScrollView>
 
-    <Grid Margin="10">
+         <Grid Margin="10">
         
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" />  
@@ -50,7 +50,7 @@
          x:Name="labelPergunta" />
 
         <Button Text="VOLTAR"
-        BackgroundColor="#730b46"
+        BackgroundColor="DarkBlue"
         TextColor="White"
         Clicked="ButtonVoltarButtonClicked"
         Grid.Row="9"
@@ -98,21 +98,23 @@
 
         <Button Grid.Row="7"
          Grid.Column="0" 
-         Text="Cartas"
+         Text="Universitário"
          Margin="5" 
          BackgroundColor="#730b46"/>
 
         <Button Grid.Row="7"
          Grid.Column="1" 
-         Text="Retire 1 errado"
+         Text="Retire 3 errados"
          Margin="5"
-         BackgroundColor="#730b46" />
+         BackgroundColor="#730b46"
+         Clicked="OnAjudaRetiradaClicked" />
 
         <Button Grid.Row="7"
          Grid.Column="2"
-         Text="Universitários"
+         Text="Pular"
          Margin="5"
-         BackgroundColor="#730b46" />
+         BackgroundColor="#730b46"
+         Clicked="OnAjudaPulaClicked" />
 
 
     </Grid>
