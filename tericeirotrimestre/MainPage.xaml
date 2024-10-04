@@ -35,7 +35,7 @@
         <Label Grid.Row="8"
          Text="Nível:"
          Grid.Column="2"
-          x:Name="Nivel" />
+         x:Name="Nivel" />
 
         <Image Grid.Row="0" 
         Grid.ColumnSpan="3" 
@@ -50,11 +50,11 @@
          x:Name="labelPergunta" />
 
         <Button Text="VOLTAR"
-        BackgroundColor="DarkBlue"
-        TextColor="White"
-        Clicked="ButtonVoltarButtonClicked"
-        Grid.Row="9"
-        Grid.Column="0"/>
+         BackgroundColor="DarkBlue"
+         TextColor="White"
+         Clicked="ButtonVoltarButtonClicked"
+         Grid.Row="9"
+         Grid.Column="0"/>
 
         <Button Grid.Row="2"
          Grid.ColumnSpan="3"
@@ -100,7 +100,8 @@
          Grid.Column="0" 
          Text="Universitário"
          Margin="5" 
-         BackgroundColor="#730b46"/>
+         BackgroundColor="#730b46"
+         Clicked="OnAjudaUniversitariosClicked"/>
 
         <Button Grid.Row="7"
          Grid.Column="1" 
