@@ -4,6 +4,8 @@ public partial class MainPage : ContentPage
 {
     Gerenciador gerenciador;
 
+	private int clickcount;
+
     public MainPage()
     {
         InitializeComponent();
@@ -44,8 +46,20 @@ public partial class MainPage : ContentPage
 	}
 	void OnAjudaPulaClicked (object s, EventArgs e)
 	{
-		gerenciador.ProximaQuestao();
-		(s as Button).IsVisible=false;
+		gerenciador.ProximaQuestao();	
+		clickcount++;
+		if (clickcount>=3)
+		(
+			(sender as Button).IsVisible=false;
+		
+		)
+		else 
+		(
+			(sender as Button).IsVisible=true;
+		
+		)	
+		
+		 
 	}
 
 	void OnAjudaUniversitariosClicked(object s, EventArgs e)
