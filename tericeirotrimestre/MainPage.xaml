@@ -110,12 +110,14 @@
          BackgroundColor="#730b46"
          Clicked="OnAjudaRetiradaClicked" />
 
-        <Button Grid.Row="7"
+        <Button 
+        Grid.Row="7"
          Grid.Column="2"
-         Text="Pular"
+         Text="Pular 3x"
          Margin="5"
          BackgroundColor="#730b46"
-         Clicked="OnAjudaPulaClicked" />
+         Clicked="OnAjudaPulaClicked"
+         x:Name="pular" />
 
 
     </Grid>

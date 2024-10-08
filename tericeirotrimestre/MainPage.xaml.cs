@@ -6,6 +6,8 @@ public partial class MainPage : ContentPage
 
 	private int clickcount;
 
+	private int clickedvezes;
+
     public MainPage()
     {
         InitializeComponent();
@@ -46,21 +48,33 @@ public partial class MainPage : ContentPage
 	}
 	void OnAjudaPulaClicked (object s, EventArgs e)
 	{
-		gerenciador.ProximaQuestao();	
+		gerenciador.ProximaQuestao();
 		clickcount++;
-		if (clickcount>=3)
-		(
-			(sender as Button).IsVisible=false;
-		
-		)
-		else 
-		(
-			(sender as Button).IsVisible=true;
-		
-		)	
-		
-		 
-	}
+		clickedvezes++;
+       if  (clickcount>=3)
+	   {
+		(s as Button).IsVisible = false;
+	   }
+	   else
+	   {
+	    (s as Button).IsVisible = true;
+	   }
+	   
+	   if (clickedvezes==1)
+	   {
+		 pular.Text="Pular 2x";
+	   }
+       else if (clickedvezes==2)
+	   {
+		 pular.Text="Pular 1x";
+	   }
+	   else if (clickedvezes>=3)
+       {
+		(s as Button).IsVisible = false;
+	   }
+
+	}	 
+	
 
 	void OnAjudaUniversitariosClicked(object s, EventArgs e)
 	{
